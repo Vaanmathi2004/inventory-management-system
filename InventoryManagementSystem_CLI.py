@@ -26,7 +26,6 @@ class InventoryManagementSystem:
     Methods:
     add_product: Add a new product to the inventory.
     update_product: Update an existing product in the inventory.
-    remove_product: Remove a product from the inventory.
     track_inventory: Track products with low stock based on a threshold quantity.
     record_sale: Record a sale of a product and update the inventory.
     generate_report: Generate a report of the current inventory and total revenue.
@@ -78,20 +77,6 @@ class InventoryManagementSystem:
             if quantity is not None:
                 self.inventory[product_id].quantity = int(quantity)
             print("Product updated successfully.")
-        else:
-            print("Product ID does not exist.")
-
-    def remove_product(self, product_id):
-        '''
-        Remove a product from the inventory.
-
-        Args:
-        product_id (int): Unique identifier for the product.
-
-        '''
-        if product_id in self.inventory:
-            del self.inventory[product_id]
-            print("Product removed successfully.")
         else:
             print("Product ID does not exist.")
 
