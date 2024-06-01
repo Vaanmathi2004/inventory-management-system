@@ -1,11 +1,10 @@
 # Inventory Management System
 ## Overview
-This Inventory Management System is a Python application designed to manage products in an inventory. It allows users to add, update, and remove products, track low stock items, record sales, and generate reports on the current inventory and total revenue.
+This Inventory Management System is a Python application designed to manage products in an inventory. It allows users to add, update, track low stock items, record sales, and generate reports on the current inventory and total revenue.
 
 ## Features
 - **Add Product**: Add new products to the inventory with a unique identifier, name, price, and quantity.
 - **Update Product**: Update details of existing products, including name, price, and quantity.
-- **Remove Product**: Remove products from the inventory.
 - **Track Inventory**: Identify products with low stock based on a user-defined threshold quantity.
 - **Record Sale**: Record the sale of products and update inventory quantities and total revenue.
 - **Generate Report**: Generate a report of the current inventory and total revenue from sales.
@@ -31,7 +30,6 @@ The `InventoryManagementSystem` class manages the inventory of products.
 **Methods**
 * `add_product(product_id, name, price, quantity)`: Add a new product to the inventory.
 * `update_product(product_id, name=None, price=None, quantity=None)`: Update an existing product in the inventory.
-* `remove_product(product_id)`: Remove a product from the inventory.
 * `track_inventory(threshold)`: Track products with low stock based on a threshold quantity.
 * `record_sale(product_id, quantity_sold)`: Record a sale of a product and update the inventory.
 * `generate_report()`: Generate a report of the current inventory and total revenue.
